@@ -3,6 +3,9 @@
 namespace FibonacciSeries {
   class Program {
     static void Main(string[] args) {
+            int count = 5;
+            if (args.Length == 1)
+                count = int.Parse(args[0]);
       int[] fibonacci = CreateFibonacciSeries(5);
 
       for (int i = 0; i < fibonacci.Length; i++) {
