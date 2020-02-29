@@ -14,13 +14,11 @@ namespace FibonacciSeries {
       }
       Console.Out.WriteLine();
     }
-
     static int CreateFibonacciNumber(int index) {
       if (index == 1) return 1;
       if (index == 0) return 0;
       return CreateFibonacciNumber(index - 1) + CreateFibonacciNumber(index - 2);
     }
-
     static int[] CreateFibonacciSeries(int count) {
       int[] fibonacciSeries = new int[count];
       for (int i = 0; i < count; i++)
